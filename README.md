@@ -26,6 +26,6 @@ This emoji wedev-it doesn´t exist.
 - [x] figure out how to print a single emoji
 - [x] figure out how to get emojis (maybe library)
 - [x] figure out how to randomize emojis
-- [ ] figure out how to receive input from the command line (command line arguments)
-- [ ] figure out how to print emoji with user input
-- [ ] figure out how to print an error message when the emoji doesn´t exist
+- [x] figure out how to receive input from the command line (command line arguments)
+- [x] figure out how to print emoji with user input
+- [x] figure out how to print an error message when the emoji doesn´t exist
