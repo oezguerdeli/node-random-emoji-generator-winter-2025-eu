@@ -1,12 +1,9 @@
 import { argv } from 'node:process';
 import * as emoji from 'node-emoji';
 
-const length = argv.length;
-
-if (length < 3) {
+if (argv.length < 3) {
   //This happens only if there is no user input
-  const emojiIcon = emoji.random();
-  console.log(emojiIcon.emoji);
+  console.log(emoji.random().emoji);
 } else {
   const emojiInput = argv[2];
 
@@ -15,16 +12,6 @@ if (length < 3) {
     console.log(emoji.get(emojiInput));
   } else {
     //This happens if the user input is undefined
-    console.log(`This emoji ${emojiInput} doesn´t exist`);
+    console.log(`This emoji ${emojiInput} does not exist`);
   }
 }
-
-/*
-if (argv[3] == undefined) {
-  //looking for emoji in argument
-  emoji.emojify(argv);
-} else {
-  //random generation of emoji
-  console.log(emojiIcon.emoji);
-}
-*/
