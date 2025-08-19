@@ -5,13 +5,11 @@ if (argv.length < 3) {
   //This happens only if there is no user input
   console.log(emoji.random().emoji);
 } else {
-  const emojiInput = argv[2];
-
-  if (emoji.has(':' + emojiInput + ':')) {
+  if (emoji.has(':' + argv[2] + ':')) {
     //This happens only if the emoji exists
-    console.log(emoji.get(emojiInput));
+    console.log(emoji.get(argv[2]));
   } else {
     //This happens if the user input is undefined
-    console.log(`This emoji ${emojiInput} does not exist`);
+    console.log(`This emoji ${argv[2]} does not exist`);
   }
 }
