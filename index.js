@@ -1,5 +1,5 @@
 import { argv } from 'node:process';
-import emoji from 'node-emoji';
+import * as emoji from 'node-emoji';
 
 if (argv.length < 3) {
   // This happens only if there is no user input
